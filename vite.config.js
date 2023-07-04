@@ -9,7 +9,7 @@ export default defineConfig({
           maninfest: {
             icons :[
               {
-                src: '/icons/icon-192x192.png',
+                src: '/icons/512.png',
                 sizes: '192x192',
                 type: 'image/png',
                   purpose: 'any maskable'
