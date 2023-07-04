@@ -6,16 +6,22 @@ export default defineConfig({
   plugins: [react(),
     VitePWA(
         {
-          maninfest: {
-            icons :[
-              {
-                src: '/icons/512.png',
-                sizes: '192x192',
-                type: 'image/png',
-                  purpose: 'any maskable'
-              }
-            ]
-          }
+            manifest: {
+                name: 'My PWA App',
+                short_name: 'PWA App',
+                start_url: '/',
+                display: 'standalone',
+                theme_color: '#000000',
+                background_color: '#ffffff',
+                icons: [
+                    {
+                        src: '/icons/icon-512.png',
+                        sizes: '192x192',
+                        type: 'image/png',
+                    },
+
+                ],
+            },
         }
     )],
 })
